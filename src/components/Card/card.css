@@ -1,0 +1,109 @@
+/* RGB */
+.wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 10px 0 20px 0;
+}
+
+.wrapper h1 {
+  color: #4464ad;
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-shadow: 2px 2px #a4b0f5;
+}
+
+.wrapper #date {
+  font-size: 2.4rem;
+}
+
+.wrapper img {
+  width: 50%;
+  height: 50vh;
+  margin: 10px 0 10px 0;
+}
+
+.wrapper .date {
+  font-size: 2rem;
+  color: #4464ad;
+  margin-right: 5px;
+}
+
+.wrapper .date-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper p {
+  font-size: 1.2rem;
+  width: 50%;
+  font-family: "Montserrat";
+  color: #4464ad;
+  background-color: #fffff2;
+}
+
+.wrapper .hidden {
+  display: none;
+}
+
+.wrapper .show {
+  display: block;
+  cursor: pointer;
+}
+
+.wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper form input {
+  height: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  color: #4464ad;
+}
+
+.wrapper form .dateSelector {
+  height: 40px;
+  color: #fffff2;
+  background-color: #4464ad;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.wrapper form span {
+  margin-right: 2px;
+  color: #4464ad;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=card.css.map */

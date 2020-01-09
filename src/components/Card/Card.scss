@@ -1,0 +1,135 @@
+/* colors */
+$dark-orange: rgb(161, 99, 6);
+$black: rgb(12, 12, 1);
+
+/* styles */
+
+.container {
+  align-items: center;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: flex-start;
+
+
+  .up {
+    margin-bottom: 10rem;
+    h1 {
+      color: $dark-orange;
+      font-size: 3.6rem;
+      font-weight: bold;
+    }
+  }
+
+  .middle-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Leckerli One', cursive;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      flex: 1;
+      padding: 0 3rem;
+
+      .date-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .date {
+          display: flex;
+          justify-content: flex-start;
+          align-self: flex-end;
+          color: $dark-orange;
+          font-size: 1.3rem;
+          margin-right: 5px;
+        }
+      }
+
+      h3 {
+        color: $dark-orange;
+      }
+      p {
+        background-color: $black;
+        color: $dark-orange;
+        font-family: "Montserrat";
+        font-size: 1.2rem;
+        width: 100%;
+      }
+    }
+
+    .right {
+      align-self: flex-start;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      img {
+        display: flex;
+        align-self: flex-end;
+        height: 20rem;
+        margin: 0;
+      }
+
+      p{
+        display: flex;
+        align-self: center;
+        color: $dark-orange;
+      }
+
+
+    form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      input {
+        color: $dark-orange;
+        cursor: pointer;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+    
+
+      .date-picker {
+        background-color: $dark-orange;
+        border-radius: 5px;
+        color: $black;
+        font-size: 1.2rem;
+        height: 40px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+
+        span {
+          color: $dark-orange;
+          cursor: pointer;
+          font-size: 1.4rem;
+          margin-right: 2px;
+        }
+      }
+      .hidden {
+        display: none;
+      }
+
+      .show {
+        cursor: pointer;
+        display: block;
+      }
+    }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40rem;
+
+  }
+}

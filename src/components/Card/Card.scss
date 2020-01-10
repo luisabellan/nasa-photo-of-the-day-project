@@ -146,7 +146,9 @@ table {
   background-color: $black;
   display: flex;
   flex-direction: column;
- 
+ width: 100%;
+  margin:0;
+  flex: 1;
 
   justify-content: center;
   height: 100%;
@@ -182,14 +184,16 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 
-    .left {
+    .first {
       display: flex;
       flex-direction: column;
       align-self: center;
+    
       flex: 1;
       padding: 0 10rem;
-      width: 40%;
+    
 
       .date-container {
         align-items: center;
@@ -220,7 +224,7 @@ table {
       }
     }
 
-    .right {
+    .second {
       align-self: flex-start;
       display: flex;
       flex: 1;
@@ -255,7 +259,7 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem 20rem;
+    margin: 5rem 10rem;
     height: 100%;
 
     button.date-picker {

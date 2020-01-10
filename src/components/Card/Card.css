@@ -142,6 +142,11 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -187,9 +192,10 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
-.container .middle-container .left {
+.container .middle-container .first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,10 +209,9 @@ table {
       -ms-flex: 1;
           flex: 1;
   padding: 0 10rem;
-  width: 40%;
 }
 
-.container .middle-container .left .date-container {
+.container .middle-container .first .date-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -219,7 +224,7 @@ table {
           flex-direction: column;
 }
 
-.container .middle-container .left .date-container .date {
+.container .middle-container .first .date-container .date {
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: #a16306;
@@ -233,20 +238,20 @@ table {
   margin-right: 5px;
 }
 
-.container .middle-container .left h3 {
+.container .middle-container .first h3 {
   color: #a16306;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.container .middle-container .left p {
+.container .middle-container .first p {
   background-color: #0c0c01;
   color: #a16306;
   font-size: 1.2rem;
   width: 100%;
 }
 
-.container .middle-container .right {
+.container .middle-container .second {
   -ms-flex-item-align: start;
       align-self: flex-start;
   display: -webkit-box;
@@ -264,7 +269,7 @@ table {
       align-self: center;
 }
 
-.container .middle-container .right img {
+.container .middle-container .second img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +283,7 @@ table {
   margin-top: 3rem;
 }
 
-.container .middle-container .right p {
+.container .middle-container .second p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +308,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5rem 20rem;
+  margin: 5rem 10rem;
   height: 100%;
 }
 

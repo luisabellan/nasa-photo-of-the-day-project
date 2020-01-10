@@ -85,7 +85,7 @@ function Card() {
       </div>
 
       <div className="middle-container">
-        <div className="left">
+        <div className="first">
           <DateDiv className="date-container">
             <Moment className="date" format="MMMM Do YYYY">
               {data.date}
@@ -95,7 +95,7 @@ function Card() {
           <ExplanationP> {data.explanation}</ExplanationP>
         </div>
 
-        <div className="right">
+        <div className="second">
           <PhotoImg alt={data.title} src={data.hdurl} />
           <AuthorP>Author: {data.copyright}</AuthorP>
         </div>

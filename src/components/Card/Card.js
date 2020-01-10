@@ -59,13 +59,14 @@ function Card() {
   `
 
   const Title = styled.h1`
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Merienda', cursive;
   border: 3px solid  rgb(161, 99, 6);
 
 
   `
 
   const DateDiv = styled.div`
+  font-family: 'Poppins', sans-serif;
   
   `
   const DescriptionH3 = styled.h3`

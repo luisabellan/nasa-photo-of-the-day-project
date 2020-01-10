@@ -43,7 +43,17 @@ function Card() {
       .catch(err => console.log(err));
   };
 
+  const TopDiv = styled.div`
 
+
+  `
+  const MiddleDiv = styled.div`
+
+
+  `
+  const BottomDiv = styled.div`
+
+  `
 
   const Title = styled.h1`
   font-family: 'Poppins', sans-serif;
@@ -80,11 +90,11 @@ function Card() {
 
   return (
     <div className="container">
-      <div className="up">
+      <TopDiv className="up">
         <Title>{data.title}</Title>
-      </div>
+      </TopDiv>
 
-      <div className="middle-container">
+      <MiddleDiv className="middle-container">
         <div className="first">
           <DateDiv className="date-container">
             <Moment className="date" format="MMMM Do YYYY">
@@ -99,9 +109,9 @@ function Card() {
           <PhotoImg alt={data.title} src={data.hdurl} />
           <AuthorP>Author: {data.copyright}</AuthorP>
         </div>
-      </div>
+      </MiddleDiv>
 
-      <div className="bottom">
+      <BottomDiv className="bottom">
       <DatePickerButton className="date-picker" onClick={toggleDate}>
             <span>Choose date</span>
           </DatePickerButton>
@@ -115,7 +125,7 @@ function Card() {
             onChange={onChange}
           />
         </form>
-      </div>
+      </BottomDiv>
     </div>
   );
 }

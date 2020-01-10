@@ -220,6 +220,7 @@ table {
       padding: 0 20rem;
       flex-direction: column;
       align-self: center;
+     
       img {
         display: flex;
         align-self: center;
@@ -228,12 +229,15 @@ table {
         width: 100%;
         max-width: 40rem;
         margin-top: 3rem;
+        
       }
 
       p {
         display: flex;
         align-self: center;
         color: $dark-orange;
+        font-size: 2rem;
+        margin-top: 3rem;
       }
     }
   }
@@ -261,6 +265,7 @@ table {
         font-size: 2rem;
         margin-right: 2px;
         height: 4rem;
+        
       }
     }
 

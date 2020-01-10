@@ -280,6 +280,8 @@ table {
   -ms-flex-item-align: center;
       align-self: center;
   color: #a16306;
+  font-size: 2rem;
+  margin-top: 3rem;
 }
 
 .container .bottom {

@@ -90,7 +90,7 @@ audio,
 video {
   border: 0;
   font: inherit;
-  font-size: 62.5%;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   vertical-align: baseline;
@@ -137,11 +137,16 @@ table {
   border-spacing: 0;
 }
 
+
+
+
+
 .container {
   align-items: center;
   background-color: $black;
   display: flex;
   flex-direction: column;
+ 
 
   justify-content: center;
   height: 100%;
@@ -220,7 +225,8 @@ table {
         align-self: center;
         height: 20rem;
         margin: 0;
-        width: 60%;
+        width: 100%;
+        max-width: 40rem;
         margin-top: 3rem;
       }
 
@@ -267,7 +273,7 @@ table {
       input {
         color: $dark-orange;
         cursor: pointer;
-        font-size: 25px;
+        font-size:23px;
         text-align: center;
       
       }

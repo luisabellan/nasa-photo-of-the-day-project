@@ -7,7 +7,7 @@ import moment from "moment";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
 function Card() {
   const [data, setData] = useState({});
@@ -45,6 +45,9 @@ function Card() {
 
   const TopDiv = styled.div`
 
+      text-justify: distribute;
+
+
 
   `
   const MiddleDiv = styled.div`
@@ -58,6 +61,8 @@ function Card() {
   const Title = styled.h1`
   font-family: 'Poppins', sans-serif;
   border: 3px solid  rgb(161, 99, 6);
+
+
   `
 
   const DateDiv = styled.div`

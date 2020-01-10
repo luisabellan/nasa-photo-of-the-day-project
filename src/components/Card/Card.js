@@ -7,6 +7,7 @@ import moment from "moment";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import styled from "styled-components"
 
 function Card() {
   const [data, setData] = useState({});
@@ -42,33 +43,68 @@ function Card() {
       .catch(err => console.log(err));
   };
 
+
+
+  const Title = styled.h1`
+  font-family: 'Poppins', sans-serif;
+  border: 3px solid  rgb(161, 99, 6);
+  `
+
+  const DateDiv = styled.div`
+  
+  `
+  const DescriptionH3 = styled.h3`
+  font-family: 'Leckerli One', cursive;
+  `
+  const ExplanationP = styled.p`
+  font-family: 'Merienda', cursive;
+  border-right: 3px solid  rgb(161, 99, 6);
+  border-left: 3px solid  rgb(161, 99, 6);
+  padding: 0 2rem;
+  `
+  
+  const PhotoImg = styled.img`
+  border: 2px solid rgb(161, 99, 6);
+  border-radius: 12px;
+  `
+  const AuthorP = styled.p`
+  
+  `
+
+  const DatePickerButton = styled.button`
+  
+  `
+
+
+
+
   return (
     <div className="container">
       <div className="up">
-        <h1>{data.title}</h1>
+        <Title>{data.title}</Title>
       </div>
 
       <div className="middle-container">
         <div className="left">
-          <div className="date-container">
+          <DateDiv className="date-container">
             <Moment className="date" format="MMMM Do YYYY">
               {data.date}
             </Moment>
-          </div>
-          <h3>Description</h3>
-          <p> {data.explanation}</p>
+          </DateDiv>
+          <DescriptionH3>Description</DescriptionH3>
+          <ExplanationP> {data.explanation}</ExplanationP>
         </div>
 
         <div className="right">
-          <img alt={data.title} src={data.hdurl} />
-          <p>Author: {data.copyright}</p>
+          <PhotoImg alt={data.title} src={data.hdurl} />
+          <AuthorP>Author: {data.copyright}</AuthorP>
         </div>
       </div>
 
       <div className="bottom">
-      <button className="date-picker" onClick={toggleDate}>
+      <DatePickerButton className="date-picker" onClick={toggleDate}>
             <span>Choose date</span>
-          </button>
+          </DatePickerButton>
 
         <form>
          

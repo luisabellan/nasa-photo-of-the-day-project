@@ -65,11 +65,13 @@ function Card() {
         </div>
       </div>
 
-      <div className="down">
-        <form>
-          <button className="date-picker" onClick={toggleDate}>
-            <span>Choose another date</span>
+      <div className="bottom">
+      <button className="date-picker" onClick={toggleDate}>
+            <span>Choose date</span>
           </button>
+
+        <form>
+         
           <DatePicker
             selected={startDate}
             id="toggle"

@@ -142,11 +142,10 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   width: 100%;
-  margin: 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -166,22 +165,6 @@ table {
 
 .container .up {
   margin-bottom: 5rem;
-}
-
-.container .up h1 {
-  color: #a16306;
-  font-size: 3.6rem;
-  font-weight: bold;
-  margin-top: 5rem;
-  padding: 0 8rem;
-  min-width: 30rem;
-  max-width: 30rem;
-}
-
-.container .middle-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,10 +172,44 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.container .up h1 {
+  color: #a16306;
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-top: 5rem;
+  padding: 0 5rem;
+  min-width: 30rem;
+  max-width: 30rem;
+}
+
+.container .middle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .container .middle-container .first {
@@ -208,7 +225,6 @@ table {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0 10rem;
 }
 
 .container .middle-container .first .date-container {
@@ -232,10 +248,9 @@ table {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.3rem;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-right: 5px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .container .middle-container .first h3 {
@@ -245,28 +260,30 @@ table {
 }
 
 .container .middle-container .first p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   background-color: #0c0c01;
   color: #a16306;
   font-size: 1.2rem;
-  width: 100%;
+  max-width: 40rem;
 }
 
 .container .middle-container .second {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -ms-flex-item-align: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0 20rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 .container .middle-container .second img {
@@ -277,7 +294,6 @@ table {
       align-self: center;
   height: 20rem;
   margin: 0;
-  width: 100%;
   max-width: 40rem;
   min-width: 30rem;
   margin-top: 3rem;
@@ -310,6 +326,7 @@ table {
           align-items: center;
   margin: 5rem 10rem;
   height: 100%;
+  width: 100%;
 }
 
 .container .bottom button.date-picker {
@@ -326,7 +343,6 @@ table {
   font-weight: bold;
   cursor: pointer;
   font-size: 2rem;
-  margin-right: 2px;
   height: 4rem;
 }
 
@@ -350,7 +366,7 @@ table {
 .container .bottom form input {
   color: #a16306;
   cursor: pointer;
-  font-size: 23px;
+  font-size: 3rem;
   text-align: center;
 }
 /*# sourceMappingURL=Card.css.map */

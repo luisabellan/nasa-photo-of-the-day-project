@@ -232,6 +232,8 @@ table {
 
 .container .middle-container .left h3 {
   color: #a16306;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .container .middle-container .left p {

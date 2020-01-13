@@ -7,7 +7,15 @@ import moment from "moment";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import styled, {css} from "styled-components"
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+/** @jsx jsx */
+import { jsx, css } from '@emotion/core'
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+/** @jsx jsx */
+import styled from '@emotion/styled'
+
+
+
 
 function Card() {
   const [data, setData] = useState({});
@@ -86,7 +94,7 @@ function Card() {
   const AuthorP = styled.p`
   
   `
-
+ 
   const DatePickerButton = styled.button`
   
   `

@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
     "axios": "^0.19.1",
+    "emotion": "^10.0.27",
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-test-renderer": "^16.12.0"
   }
 }

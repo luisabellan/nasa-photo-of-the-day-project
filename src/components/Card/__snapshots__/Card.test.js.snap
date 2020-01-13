@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card changes date of article 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="up css-q2fyr7"
+  >
+    <h1
+      className="css-75xtvi"
+    />
+  </div>
+  <div
+    className="middle-container css-1g37tb9"
+  >
+    <div
+      className="first"
+    >
+      <div
+        className="date-container css-41j3rb"
+      >
+        <time
+          className="date"
+          dateTime={"2020-01-13T11:51:57.905Z"}
+        >
+          January 13th 2020
+        </time>
+      </div>
+      <h3
+        className="css-14ln1wo"
+      >
+        Description
+      </h3>
+      <p
+        className="css-sfzhzy"
+      >
+         
+      </p>
+    </div>
+    <div
+      className="second"
+    >
+      <img
+        className="css-17muvj7"
+      />
+      <p
+        className="css-175m5k6"
+      >
+        Author: 
+      </p>
+    </div>
+  </div>
+  <div
+    className="bottom css-10jth8l"
+  >
+    <button
+      className="date-picker css-175m5k6"
+      onClick={[Function]}
+    >
+      <span>
+        Choose date
+      </span>
+    </button>
+    <form>
+      <div
+        className="react-datepicker-wrapper"
+      >
+        <div
+          className="react-datepicker__input-container"
+        >
+          <input
+            className="hidden"
+            disabled={false}
+            id="toggle"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            readOnly={false}
+            type="text"
+            value="01/13/2020"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

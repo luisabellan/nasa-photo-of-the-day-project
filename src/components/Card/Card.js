@@ -40,9 +40,9 @@ function Card() {
 
   const onChange = date => {
     setStartDate(date);
-    console.log(startDate);
+    //console.log(startDate);
     let fancyDate = moment(date).format("YYYY-MM-DD");
-    console.log(fancyDate);
+    //console.log(fancyDate);
     axios
       .get(
         `https://api.nasa.gov/planetary/apod?api_key=JnWo6HiIwC9BG0xa2UyobaexzaMVqCbQi9h9hs6q&date=${fancyDate}`

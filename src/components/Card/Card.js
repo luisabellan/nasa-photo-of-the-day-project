@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import "./Card.scss";
+import {useState, useEffect } from "react"
+import axios from "axios"
+import "./Card.scss"
 
-import Moment from "react-moment";
-import moment from "moment";
+import Moment from "react-moment"
+import moment from "moment"
 
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import DatePicker from "react-datepicker"
+import "react-datepicker/dist/react-datepicker.css"
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
@@ -18,37 +18,38 @@ import styled from '@emotion/styled'
 
 
 function Card() {
-  const [data, setData] = useState({});
-  const [startDate, setStartDate] = useState(new Date());
+  const [data, setData] = useState({})
+  const [startDate, setStartDate] = useState(new Date())
   useEffect(() => {
     axios
       .get(
         `https://api.nasa.gov/planetary/apod?api_key=j8MvcwHy1qL4XgDz8qnCW7gFaf8MqNSuKALMSpAt`
       )
-      .then(res => setData(res.data));
+      .then(res => setData(res.data))
+      .catch(err => `Houston we have an error: ${err}`)      
   }, []);
 
   const toggleDate = e => {
     e.preventDefault();
-    const input = document.getElementById("toggle");
+    const input = document.getElementById("toggle")
     if (input.className.match("hidden")) {
-      input.className = "show";
+      input.className = "show"
     } else {
-      input.className = "hidden";
+      input.className = "hidden"
     }
   };
 
   const onChange = date => {
-    setStartDate(date);
-    //console.log(startDate);
-    let fancyDate = moment(date).format("YYYY-MM-DD");
-    //console.log(fancyDate);
+    setStartDate(date)
+    //console.log(startDate)
+    let fancyDate = moment(date).format("YYYY-MM-DD")
+    //console.log(fancyDate)
     axios
       .get(
         `https://api.nasa.gov/planetary/apod?api_key=JnWo6HiIwC9BG0xa2UyobaexzaMVqCbQi9h9hs6q&date=${fancyDate}`
       )
       .then(res => setData(res.data))
-      .catch(err => console.log(err));
+      .catch(err => console.log(err))
   };
 
   const TopDiv = styled.div`
@@ -141,7 +142,7 @@ function Card() {
         </form>
       </BottomDiv>
     </div>
-  );
+  )
 }
 
-export default Card;
+export default Card

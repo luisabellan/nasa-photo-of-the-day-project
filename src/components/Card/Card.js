@@ -23,7 +23,7 @@ function Card() {
   useEffect(() => {
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=j8MvcwHy1qL4XgDz8qnCW7gFaf8MqNSuKALMSpAt`
+        `https://api.nasa.gov/planetary/apod?api_key=P3K6FUbsiWHNxh59i3Ma4MqeyB5srmyDI2D7LzGd`
       )
       .then(res => setData(res.data))
       .catch(err => `Houston we have an error: ${err}`)      
@@ -46,7 +46,7 @@ function Card() {
     //console.log(fancyDate)
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=JnWo6HiIwC9BG0xa2UyobaexzaMVqCbQi9h9hs6q&date=${fancyDate}`
+        `https://api.nasa.gov/planetary/apod?api_key=P3K6FUbsiWHNxh59i3Ma4MqeyB5srmyDI2D7LzGd&date=${fancyDate}`
       )
       .then(res => setData(res.data))
       .catch(err => console.log(err))

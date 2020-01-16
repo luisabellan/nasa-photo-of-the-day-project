@@ -17,10 +17,10 @@ test("Card changes date of article", () => {
   expect(tree).toMatchSnapshot();
 });
 /* 
-The test fails because there is a expected change between snapshots: the date for the articles changes because even tho it's finally shown in a this format: January 13th 2020, it is taken from the API in UTC format, and that includes hours, minutes and seconds, and those change from snapshot to snapshot.
+The test fails because there is an expected change between snapshots: the date for the articles changes because even though it's finally shown in a this format: January 13th 2020, it is taken from the API in UTC format, and that includes hours, minutes and seconds, and those change from snapshot to snapshot.
 As no unexpected changes occur we can consider the test valid and update the snapshot by pressing 'u' after yarn test produces de output. (The date syntax is managed by moment.js).
 
-Accroding to the docs at https://jestjs.io/docs/en/snapshot-testing :
+According to the docs at https://jestjs.io/docs/en/snapshot-testing :
 
 Snapshot Testing
 

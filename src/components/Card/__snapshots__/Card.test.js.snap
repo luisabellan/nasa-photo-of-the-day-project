@@ -22,9 +22,9 @@ exports[`Card changes date of article 1`] = `
       >
         <time
           className="date"
-          dateTime={"2020-01-13T11:51:57.905Z"}
+          dateTime={"2020-01-14T01:22:39.924Z"}
         >
-          January 13th 2020
+          January 14th 2020
         </time>
       </div>
       <h3
@@ -80,7 +80,7 @@ exports[`Card changes date of article 1`] = `
             onKeyDown={[Function]}
             readOnly={false}
             type="text"
-            value="01/13/2020"
+            value="01/14/2020"
           />
         </div>
       </div>

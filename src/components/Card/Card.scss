@@ -142,14 +142,55 @@ html {
     background-color: $dark-orange;
     bottom: 13rem;
     right: 50%;
+    font-size: 20rem;
+    width: 20rem;
+    @media (min-width:500px){
+      width: 25rem;
+      p{
+              font-size: 40rem;
+
+      }
+     
+    }
     .react-datepicker__header {
       background-color: #b99954;
+      width: 20rem;
+      @media (min-width:500px){
+        width: 25rem;
+      p{
+              font-size: 40rem;
+
+      }
+    }
 
      
     }
      .react-datepicker__triangle {
         display: none;
       }
+  }
+  .react-datepicker__day{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 0.5rem;
+    @media (min-width: 500px){
+      margin: 0.8rem;
+
+
+    }
+    font-family: "Ubuntu";
+  }
+  .react-datepicker__day-name{
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    font-weight: bolder;
+     @media (min-width: 500px){
+      margin: 0.8rem;
+      font-size: 1.5;
+
+
+    }
+
   }
   .react-datepicker__day--selected{
     
@@ -196,6 +237,7 @@ html {
       margin-top: 2rem;
       padding: 2rem;
       width: 18rem;
+      text-align: center;
 
       @media (min-width: 500px) {
         font-size: 1.8em;

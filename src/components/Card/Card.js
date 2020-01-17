@@ -111,6 +111,7 @@ console.log(data);
 
       <MiddleDiv className="middle-container">
         <div className="first">
+          <PhotoImg alt={data.title} src={data.hdurl} />
           <DateDiv className="date-container">
             <Moment className="date" format="MMMM Do YYYY">
               {data.date}
@@ -121,7 +122,6 @@ console.log(data);
         </div>
 
         <div className="second">
-          <PhotoImg alt={data.title} src={data.hdurl} />
           {/* <AuthorP>Author: {data.copyright}</AuthorP> */}
         </div>
       </MiddleDiv>
@@ -141,7 +141,9 @@ console.log(data);
         </form>
       </BottomDiv>
       <footer>
-        <p>&copy; Copyright - Luis Abellan {moment({startDate}).format("YYYY")}</p>
+        <p>
+          &copy; Copyright - Luis Abellan {moment({ startDate }).format("YYYY")}
+        </p>
       </footer>
     </div>
   );

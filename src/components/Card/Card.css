@@ -130,6 +130,20 @@ table {
   border-spacing: 0;
 }
 
+html .react-datepicker {
+  background-color: #a16306;
+  bottom: 13rem;
+  right: 50%;
+}
+
+html .react-datepicker .react-datepicker__header {
+  background-color: #b99954;
+}
+
+html .react-datepicker .react-datepicker__triangle {
+  display: none;
+}
+
 .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -149,9 +163,7 @@ table {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100%;
 }
 
 .container .hidden {
@@ -166,7 +178,7 @@ table {
 }
 
 .container .up {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,7 +199,7 @@ table {
   font-weight: bold;
   margin-top: 2rem;
   padding: 2rem;
-  width: 21rem;
+  width: 18rem;
 }
 
 @media (min-width: 500px) {
@@ -221,7 +233,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 25rem;
+  width: 18rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -236,6 +248,32 @@ table {
 @media (min-width: 800px) {
   .container .middle-container {
     width: 40rem;
+  }
+}
+
+.container .middle-container img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: calc(30rem / 1.2);
+  height: calc(20rem / 1.2);
+  margin-bottom: 2rem;
+  width: 22rem;
+}
+
+@media (min-width: 500px) {
+  .container .middle-container img {
+    width: calc(30rem / 1);
+    height: calc(20rem / 1);
+  }
+}
+
+@media (min-width: 800px) {
+  .container .middle-container img {
+    width: calc(30rem / 0.67);
+    height: calc(20rem / 0.67);
   }
 }
 
@@ -345,31 +383,6 @@ table {
           flex-direction: column;
 }
 
-.container .middle-container .second img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  width: calc(30rem / 1.2);
-  height: calc(20rem / 1.2);
-  margin-top: 3rem;
-}
-
-@media (min-width: 500px) {
-  .container .middle-container .second img {
-    width: calc(30rem / 1);
-    height: calc(20rem / 1);
-  }
-}
-
-@media (min-width: 800px) {
-  .container .middle-container .second img {
-    width: calc(30rem / 0.67);
-    height: calc(20rem / 0.67);
-  }
-}
-
 .container .middle-container .second p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,7 +408,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem 10rem;
+  margin: 0rem 10rem;
   height: 100%;
   width: 100%;
 }
@@ -455,7 +468,7 @@ table {
       align-self: center;
   color: #a16306;
   font-size: 1rem;
-  margin-top: 3rem;
+  margin-top: 0rem;
   padding: 1.2rem;
 }
 /*# sourceMappingURL=Card.css.map */

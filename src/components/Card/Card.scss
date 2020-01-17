@@ -137,10 +137,6 @@ table {
   border-spacing: 0;
 }
 
-
-
-
-
 .container {
   align-items: center;
   background-color: $black;
@@ -148,9 +144,10 @@ table {
   flex-direction: column;
   align-items: center;
   align-self: center;
-  width: 100%;
   justify-content: center;
   height: 100%;
+  flex: 1;
+  
 
   .hidden {
     display: none;
@@ -161,33 +158,37 @@ table {
     display: flex;
   }
 
-  
   .up {
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: center;
-
+    
+     
 
     h1 {
       color: $dark-orange;
-      font-size: 3.6rem;
+      font-size: 1.7rem;
       font-weight: bold;
-      margin-top: 5rem;
-      padding: 0 5rem;
-      max-width: 30rem;
-      @media (max-width: 600px) {
+      margin-top: 2rem;
+      padding: 2rem;
+      width: 21rem;
+     
 
-      
-          font-size: 2.3em;
-          max-width: 20rem;
-          margin : 1rem 3rem;
-
-      
+      @media (min-width: 500px) {
+        font-size: 1.8em;
+        width: 25rem;
+        
+        
       }
+       @media (min-width: 800px){
+        font-size: 2rem;
+        width: 40rem;
+        
 
 
+        }
     }
   }
 
@@ -198,27 +199,35 @@ table {
     align-items: center;
     align-self: center;
     justify-content: center;
-    width: 100%;
-    flex:1;
-  
-      
+    width: 25rem;
+     
 
+      @media (min-width: 500px) {
+        width: 30rem;
+        
+        
+      }
+       @media (min-width: 800px){
+        width: 40rem;
+        
+
+
+        }
   
-  
+    
+    flex: 1;
 
     .first {
       display: flex;
       flex-direction: column;
       align-self: center;
       flex: 1;
-      @media (max-width: 600px) {
 
-      
+      @media (min-width: 500px) {
         font-size: 2.3em;
-        max-width: 27rem;
-        margin : 1rem 3rem;
+       
       }
-  
+
       .date-container {
         align-items: center;
         display: flex;
@@ -228,52 +237,77 @@ table {
           align-self: flex-end;
           color: $dark-orange;
           display: flex;
-          font-size: 1.3rem;
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
           justify-content: flex-end;
+
+          @media (min-width: 500px){
+          font-size: 1.2rem;
+
+
+          }
         }
       }
 
       h3 {
         color: $dark-orange;
+        font-size: 1.2rem;
         font-weight: bold;
         margin-bottom: 1rem;
 
+         @media (min-width: 500px){
+        font-size: 1.3rem;
+
+
+        }
       }
       p {
         display: flex;
         align-self: center;
         background-color: $black;
         color: $dark-orange;
+        font-size: 1.1rem;
+        
+        
+        
+
+        @media (min-width: 500px){
         font-size: 1.2rem;
-        max-width: 40rem;
+        
+
+
+        }
+        @media (min-width: 800px){
+        font-size: 1.3rem;
+        width: 40rem;
+
+
+        }
       }
     }
 
     .second {
-
       align-self: center;
       display: flex;
       flex: 1;
       flex-direction: column;
-      
+
       img {
         display: flex;
         align-self: center;
-        height: 20rem;
-        margin: 0;
-        max-width: 40rem;
+        width: calc(30rem / 1.2);
+        height: calc(20rem / 1.2);
+
         margin-top: 3rem;
 
-        @media (max-width: 700px) {
-
-      
-          font-size: 2.3em;
-          max-width: 20rem;
-          max-height: 15rem;
-          margin : 1rem 3rem;
-      
-      }
-      
+        @media (min-width: 500px) {
+          width: calc(30rem / 1);
+          height: calc(20rem / 1);
+        }
+        @media (min-width: 800px) {
+          width: calc(30rem / 0.67);
+          height: calc(20rem / 0.67);
+        }
       }
 
       p {
@@ -291,7 +325,7 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem 10rem;
+    margin: 2rem 10rem;
     height: 100%;
     width: 100%;
 
@@ -300,8 +334,8 @@ table {
       border-radius: 5px;
       color: $black;
       font-size: 1.2rem;
-      height: 5rem;
-      margin-top: 15px;
+      height: 4rem;
+      margin-top: 5rem;
 
       span {
         color: $black;
@@ -309,7 +343,6 @@ table {
         cursor: pointer;
         font-size: 2rem;
         height: 4rem;
-        
       }
     }
 
@@ -323,10 +356,26 @@ table {
       input {
         color: $dark-orange;
         cursor: pointer;
-        font-size:3rem;
+        font-size: 3rem;
         text-align: center;
-      
+         background-color: $dark-orange;
+      border-radius: 5px;
+      color: $black;
+      font-size: 1.2rem;
+      height: 4rem;
+      margin-top: 5px;
       }
     }
   }
+  footer{
+      p {
+        display: flex;
+        align-self: center;
+        color: $dark-orange;
+        font-size: 1rem;
+        margin-top: 3rem;
+        padding: 1.2rem;
+      }
+  }
 }
+

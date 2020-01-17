@@ -20,6 +20,8 @@ import styled from '@emotion/styled'
 function Card() {
   const [data, setData] = useState({})
   const [startDate, setStartDate] = useState(new Date())
+
+  
   useEffect(() => {
     axios
       .get(
@@ -54,7 +56,7 @@ function Card() {
 
   const TopDiv = styled.div`
 
-      text-justify: distribute;
+      
 
 
 
@@ -92,16 +94,14 @@ function Card() {
   border: 2px solid rgb(161, 99, 6);
   border-radius: 12px;
   `
-  const AuthorP = styled.p`
-  
-  `
+  /* const AuthorP = styled.p` ` */
  
   const DatePickerButton = styled.button`
   
   `
 
 
-
+console.log(data);
 
   return (
     <div className="container">
@@ -122,17 +122,16 @@ function Card() {
 
         <div className="second">
           <PhotoImg alt={data.title} src={data.hdurl} />
-          <AuthorP>Author: {data.copyright}</AuthorP>
+          {/* <AuthorP>Author: {data.copyright}</AuthorP> */}
         </div>
       </MiddleDiv>
 
-      <BottomDiv className="bottom">
-      <DatePickerButton className="date-picker" onClick={toggleDate}>
-            <span>Choose date</span>
-          </DatePickerButton>
+      <BottomDiv className="bottom date-picker">
+        <DatePickerButton className="date-picker" onClick={toggleDate}>
+          <span>Choose date</span>
+        </DatePickerButton>
 
         <form>
-         
           <DatePicker
             selected={startDate}
             id="toggle"
@@ -141,8 +140,11 @@ function Card() {
           />
         </form>
       </BottomDiv>
+      <footer>
+        <p>&copy; Copyright - Luis Abellan {moment({startDate}).format("YYYY")}</p>
+      </footer>
     </div>
-  )
+  );
 }
 
 export default Card

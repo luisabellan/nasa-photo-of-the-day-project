@@ -162,8 +162,11 @@ html .react-datepicker .react-datepicker__triangle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 15rem;
   height: 100%;
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .container .hidden {

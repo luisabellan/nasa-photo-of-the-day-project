@@ -160,8 +160,10 @@ html {
   align-items: center;
   align-self: center;
   justify-content: center;
+  min-width: 15rem;
   height: 100%;
-  width: 100%;
+ 
+  flex: 1;
 
   .hidden {
     display: none;

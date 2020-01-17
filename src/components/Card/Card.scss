@@ -151,6 +151,14 @@ html {
         display: none;
       }
   }
+  .react-datepicker__day--selected{
+    
+    background-color: #b99954;
+  }
+  .react-datepicker__day--selected:hover{
+    background-color: #b98a25;
+
+  }
 }
 .container {
   align-items: center;

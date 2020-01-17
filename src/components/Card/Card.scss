@@ -247,6 +247,10 @@ html {
         font-size: 2rem;
         width: 40rem;
       }
+      @media (min-width: 1000px) {
+        font-size: 3rem;
+        width: 60rem;
+      }
     }
   }
 
@@ -257,14 +261,8 @@ html {
     align-items: center;
     align-self: center;
     justify-content: center;
-    width: 18rem;
-
-    @media (min-width: 500px) {
-      width: 30rem;
-    }
-    @media (min-width: 800px) {
-      width: 40rem;
-    }
+ 
+    
 
     img {
       display: flex;
@@ -280,6 +278,10 @@ html {
         height: calc(20rem / 1);
       }
       @media (min-width: 800px) {
+        width: calc(30rem / 0.67);
+        height: calc(20rem / 0.67);
+      }
+      @media (min-width: 1000px) {
         width: calc(30rem / 0.67);
         height: calc(20rem / 0.67);
       }
@@ -332,13 +334,19 @@ html {
         background-color: $black;
         color: $dark-orange;
         font-size: 1.1rem;
+        width: 23rem;
 
         @media (min-width: 500px) {
           font-size: 1.2rem;
+          width: 26rem;
         }
         @media (min-width: 800px) {
           font-size: 1.3rem;
           width: 40rem;
+        }
+        @media (min-width: 800px) {
+          font-size: 1.3rem;
+          width: 50rem;
         }
       }
     }

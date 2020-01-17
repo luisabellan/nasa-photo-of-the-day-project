@@ -275,6 +275,13 @@ html .react-datepicker__day--selected:hover {
   }
 }
 
+@media (min-width: 1000px) {
+  .container .up h1 {
+    font-size: 3rem;
+    width: 60rem;
+  }
+}
+
 .container .middle-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,22 +299,9 @@ html .react-datepicker__day--selected:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 18rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-@media (min-width: 500px) {
-  .container .middle-container {
-    width: 30rem;
-  }
-}
-
-@media (min-width: 800px) {
-  .container .middle-container {
-    width: 40rem;
-  }
 }
 
 .container .middle-container img {
@@ -330,6 +324,13 @@ html .react-datepicker__day--selected:hover {
 }
 
 @media (min-width: 800px) {
+  .container .middle-container img {
+    width: calc(30rem / 0.67);
+    height: calc(20rem / 0.67);
+  }
+}
+
+@media (min-width: 1000px) {
   .container .middle-container img {
     width: calc(30rem / 0.67);
     height: calc(20rem / 0.67);
@@ -412,11 +413,13 @@ html .react-datepicker__day--selected:hover {
   background-color: #0c0c01;
   color: #a16306;
   font-size: 1.1rem;
+  width: 23rem;
 }
 
 @media (min-width: 500px) {
   .container .middle-container .first p {
     font-size: 1.2rem;
+    width: 26rem;
   }
 }
 
@@ -424,6 +427,13 @@ html .react-datepicker__day--selected:hover {
   .container .middle-container .first p {
     font-size: 1.3rem;
     width: 40rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .container .middle-container .first p {
+    font-size: 1.3rem;
+    width: 50rem;
   }
 }
 

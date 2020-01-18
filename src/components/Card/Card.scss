@@ -211,6 +211,7 @@ html {
   justify-content: center;
   min-width: 15rem;
   height: 100%;
+
  
   flex: 1;
 
@@ -320,9 +321,13 @@ html {
 
       h3 {
         color: $dark-orange;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: bold;
         margin-bottom: 1rem;
+
+        @media (min-width: 400px) {
+          font-size: 1.2rem;
+        }
 
         @media (min-width: 500px) {
           font-size: 1.3rem;
@@ -334,7 +339,12 @@ html {
         background-color: $black;
         color: $dark-orange;
         font-size: 1.1rem;
-        width: 23rem;
+        width: 20rem;
+
+        @media (min-width: 400px) {
+          font-size: 1.2rem;
+          width: 23rem;
+        }
 
         @media (min-width: 500px) {
           font-size: 1.2rem;

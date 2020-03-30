@@ -25,7 +25,7 @@ function Card() {
   useEffect(() => {
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=P3K6FUbsiWHNxh59i3Ma4MqeyB5srmyDI2D7LzGd`
+        `https://api.nasa.gov/planetary/apod?api_key=KeyfXJ9CeZYid6vFLabJkgH3vMNJqYea6veDdo1j`
       )
       .then(res => setData(res.data))
       .catch(err => `Houston we have an error: ${err}`)      
@@ -48,11 +48,10 @@ function Card() {
     //console.log(fancyDate)
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=KeyfXJ9CeZYid6vFLabJkgH3vMNJqYea6veDdo1j
-&date=${fancyDate}`
+        `https://api.nasa.gov/planetary/apod?api_key=KeyfXJ9CeZYid6vFLabJkgH3vMNJqYea6veDdo1j&date=${fancyDate}`
       )
       .then(res => setData(res.data))
-      .catch(err => console.log(err));
+      .catch(err => console.log(err))
   };
 
   const TopDiv = styled.div`

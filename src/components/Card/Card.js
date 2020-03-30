@@ -1,3 +1,4 @@
+
 import {useState, useEffect } from "react"
 import axios from "axios"
 import "./Card.scss"
@@ -149,3 +150,4 @@ function Card() {
 }
 
 export default Card
+

@@ -20,16 +20,15 @@ import styled from '@emotion/styled'
 function Card() {
   const [data, setData] = useState({})
   const [startDate, setStartDate] = useState(new Date())
+  const API_KEY = `https://api.nasa.gov/planetary/apod?api_key=KeyfXJ9CeZYid6vFLabJkgH3vMNJqYea6veDdo1j`
 
   
   useEffect(() => {
     axios
-      .get(
-        `https://api.nasa.gov/planetary/apod?api_key=P3K6FUbsiWHNxh59i3Ma4MqeyB5srmyDI2D7LzGd`
-      )
+      .get(API_KEY)
       .then(res => setData(res.data))
-      .catch(err => `Houston we have an error: ${err}`)      
-  }, []);
+      .catch(err => `Houston we have an error: ${err}`);
+  }, [API_KEY]);
 
   const toggleDate = e => {
     e.preventDefault();
@@ -48,7 +47,7 @@ function Card() {
     //console.log(fancyDate)
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=P3K6FUbsiWHNxh59i3Ma4MqeyB5srmyDI2D7LzGd&date=${fancyDate}`
+        `${API_KEY}&date=${fancyDate}`
       )
       .then(res => setData(res.data))
       .catch(err => console.log(err))

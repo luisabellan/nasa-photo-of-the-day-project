@@ -21,7 +21,7 @@ import styled from '@emotion/styled'
 function Card() {
   const [data, setData] = useState({})
   const [startDate, setStartDate] = useState(new Date())
-  const API_KEY = `https://api.nasa.gov/planetary/apod?api_key=KeyfXJ9CeZYid6vFLabJkgH3vMNJqYea6veDdo1j`
+  const API_KEY = `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}`
 
   
   useEffect(() => {

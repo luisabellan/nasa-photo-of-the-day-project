@@ -21,12 +21,13 @@ import styled from '@emotion/styled'
 function Card() {
   const [data, setData] = useState({})
   const [startDate, setStartDate] = useState(new Date())
-  const API_KEY = `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}`
+  const API_KEY = process.env.REACT_APP_API_KEY
+  const API_URL = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`
 
   
   useEffect(() => {
     axios
-      .get(API_KEY)
+      .get(API_URL)
       .then(res => setData(res.data))
       .catch(err => `Houston we have an error: ${err}`);
   }, [API_KEY]);

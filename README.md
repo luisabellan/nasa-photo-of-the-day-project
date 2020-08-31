@@ -1,5 +1,5 @@
 
-deployed here: https://nasa-photo-of-the-day.squarerobin.now.sh
+deployed here: https://nasa-photo-of-the-day-kxwr6xz3h.now.sh/
 
 # Module Project: Component Side Effects- NASA APOD
 

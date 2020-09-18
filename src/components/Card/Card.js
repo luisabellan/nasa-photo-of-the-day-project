@@ -49,7 +49,7 @@ function Card() {
     //console.log(fancyDate)
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${fancyDate}`
+        `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${fancyDate}&hd=false`
       )
       .then(res => setData(res.data))
       .catch(err => console.log(err))

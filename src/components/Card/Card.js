@@ -56,30 +56,19 @@ function Card() {
   };
 
   const TopDiv = styled.div`
-
-      
-
-
-
   `
   const MiddleDiv = styled.div`
-
-
   `
   const BottomDiv = styled.div`
-
   `
 
   const Title = styled.h1`
   font-family: 'Merienda', cursive;
   border: 3px solid  rgb(161, 99, 6);
-
-
   `
 
   const DateDiv = styled.div`
   font-family: 'Poppins', sans-serif;
-  
   `
   const DescriptionH3 = styled.h3`
   font-family: 'Leckerli One', cursive;
@@ -95,7 +84,6 @@ function Card() {
   border: 2px solid rgb(161, 99, 6);
   border-radius: 12px;
   `
-  /* const AuthorP = styled.p` ` */
  
   const DatePickerButton = styled.button`
   

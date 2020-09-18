@@ -30,7 +30,7 @@ function Card() {
       .get(API_URL)
       .then(res => setData(res.data))
       .catch(err => `Houston we have an error: ${err}`);
-  }, [API_KEY]);
+  }, [API_URL]);
 
   const toggleDate = e => {
     e.preventDefault();
@@ -49,7 +49,7 @@ function Card() {
     //console.log(fancyDate)
     axios
       .get(
-        `${API_KEY}&date=${fancyDate}`
+        `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${fancyDate}`
       )
       .then(res => setData(res.data))
       .catch(err => console.log(err))
